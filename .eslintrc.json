@@ -4,8 +4,11 @@
         "es2021": true
     },
     "extends": [
+        "airbnb",
+        "plugin:prettier/recommended",
         "plugin:react/recommended",
-        "airbnb"
+        "plugin:react-hooks/recommended",
+        "plugin:jsx-a11y/recommended"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -15,9 +18,11 @@
         "sourceType": "module"
     },
     "plugins": [
+        "prettier",
         "react"
     ],
     "rules": {
+        "prettier/prettier": ["error"],
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
     }
 }
