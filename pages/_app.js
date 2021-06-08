@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { appWithTranslation } from 'next-i18next';
 import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
@@ -11,4 +12,4 @@ MyApp.propTypes = {
   Component: PropTypes.elementType.isRequired,
 };
 
-export default MyApp;
+export default appWithTranslation(MyApp);
